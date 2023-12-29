@@ -1,25 +1,30 @@
 #!/usr/bin/env python
 
 """
-1DHeatEqn.py
+numba_1DHeatEqn.py
 
-Standard 1D Heat Equation Solver
+Fast 1D Heat Equation Solver
 
 SHSH <sandy.herho@email.ucr.edu>
 28/12/23
 """
+
 import numpy as np
 import matplotlib.pyplot as plt
+from numba import jit, prange
 
 plt.style.use("bmh")
 
+@jit(nopython=True, parallel=True)
 def linspace(start, stop, num):
     step = (stop - start) / (num - 1)
     return np.linspace(start, stop, num)
 
+@jit(nopython=True, parallel=True)
 def full_like(arr, fill_value):
     return np.full_like(arr, fill_value)
 
+@jit(nopython=True, parallel=True)
 def calculate_heat_equation(delta_t, num_x, alpha, t_max, temp1, temp2, scheme):
     delta_x = 1.0 / (num_x - 1)
     C = alpha * delta_t / (delta_x * delta_x)
@@ -50,13 +55,14 @@ def calculate_heat_equation(delta_t, num_x, alpha, t_max, temp1, temp2, scheme):
         y_old = y.copy()
 
         if scheme == "explicit":
-            for i in range(1, num_x - 1):
+            for i in prange(1, num_x - 1):
                 y[i] = y_old[i] + C * (y_old[i + 1] - 2 * y_old[i] + y_old[i - 1])
         else:
             rhs = y_old[1:-1]
             rhs[0] += C * y_old[0]
             rhs[-1] += C * y_old[-1]
-            y[1:-1] = np.linalg.solve(tri_diag, rhs)
+            for i in prange(num_x - 2):
+                y[i + 1] = np.linalg.solve(tri_diag, rhs)[i]
 
         time += delta_t
         count += 1
@@ -93,12 +99,12 @@ if __name__ == "__main__":
     temp2 = 100
 
     # Implicit Scheme Settings
-    delta_t = 10
-    scheme = "implicit"
+    # delta_t = 10
+    # scheme = "implicit"
 
     # Explicit Scheme Settings
-    #delta_t = 0.0001
-    #scheme = "explicit"
+    delta_t = 0.0001
+    scheme = "explicit"
 
     data = calculate_heat_equation(delta_t, num_x, alpha, t_max, temp1, temp2, scheme)
     plot_results(data)
