@@ -39,6 +39,7 @@ We built the numerical models and analyzed the total runtime data under the [Pyt
 - [Matplotlib](https://matplotlib.org/)
 - [Numba](https://numba.pydata.org/)
 - [NumPy](https://numpy.org/)
+- [pandas](https://pandas.pydata.org/)
 - [SciPy](https://pandas.pydata.org/)
 - [seaborn](https://seaborn.pydata.org/)
 
