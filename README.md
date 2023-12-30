@@ -1,13 +1,13 @@
 # `1DHeatEqnNumba`: Optimized Numba-based Solver for 1D Heat Equation in Python
 
 
-![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)(https://www.python.org/)
+![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub watchers](https://img.shields.io/github/watchers/Naereen/StrapDown.js.svg?style=social&label=Watch&maxAge=2592000)](https://github.com/sandyherho/1DHeatEqnNumba/watchers)
 [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 
-This repository contains the code associated with the study employing the cGENIE Earth System Model to investigate the effects of the Indonesian Throughflow (ITF) and Indonesian Archipelago (IA) closure on global meridional thermohaline circulation (THC). The study spans a simulated period of 10,000 years, focusing on critical variables such as surface density, vertical density profiles, global overturning circulation, and ocean ventilation age.
+This repository includes numerical simulation code for 1D heat equations, featuring both standard implementations and optimized versions using Numba. Additionally, it encompasses code for analyzing the statistical aspects of the total runtime, based on 100 trials for each experiment.
 
 The following are the individuals involved in this project: [S. H. S. Herho](https://scholar.google.com/citations?user=uYQgjxMAAAAJ&hl=id), [S. N. Kaban](https://scholar.google.com/citations?user=Jc0NPJsAAAAJ&hl=en), [D. E. Irawan](https://scholar.google.com/citations?user=Myvc78MAAAAJ&hl=en), and [R. Kapid](https://scholar.google.co.id/citations?user=oArSkkYAAAAJ&hl=en).
 
