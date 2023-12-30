@@ -1,14 +1,12 @@
 # `1DHeatEqnNumba`: Optimized Numba-based Solver for 1D Heat Equation in Python
 
-
-[![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://www.python.org/)
-
-[![GitHub watchers](https://img.shields.io/github/watchers/Naereen/StrapDown.js.svg?style=social&label=Watch&maxAge=2592000)](https://github.com/sandyherho/1DHeatEqnNumba/watchers)
 [![DOI](https://zenodo.org/badge/736851334.svg)](https://zenodo.org/doi/10.5281/zenodo.10445246)
+[![GitHub watchers](https://img.shields.io/github/watchers/Naereen/StrapDown.js.svg?style=social&label=Watch&maxAge=2592000)](https://github.com/sandyherho/1DHeatEqnNumba/watchers)
 
 [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+[![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)](https://www.python.org/)
 
 This repository includes numerical simulation code for 1D heat equation, featuring both standard implementations and optimized versions using Numba. Additionally, it encompasses code for analyzing the statistical aspects of the total runtime, based on 100 trials for each experiment.
 
