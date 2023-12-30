@@ -86,8 +86,7 @@ def plot_results(data):
     plt.ylabel("Temperature [$^{\circ}$C]", fontsize=18, loc="center", rotation=90)
     plt.xlabel("$x$ [m]", fontsize=18)
     plt.legend(prop={"size": 14})
-    plt.savefig("fig1.png", dpi=300)
-    plt.show()
+    plt.savefig("fig.png", dpi=300)
 
 if __name__ == "__main__":
     num_x = 101
@@ -99,12 +98,12 @@ if __name__ == "__main__":
     temp2 = 100
 
     # Implicit Scheme Settings
-    # delta_t = 10
-    # scheme = "implicit"
+    delta_t = 0.1 # 0.1; 0.25; 2.5; 10
+    scheme = "implicit"
 
     # Explicit Scheme Settings
-    delta_t = 0.0001
-    scheme = "explicit"
+    #delta_t = 0.000025
+    #scheme = "explicit"
 
     data = calculate_heat_equation(delta_t, num_x, alpha, t_max, temp1, temp2, scheme)
     plot_results(data)
