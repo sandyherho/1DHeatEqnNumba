@@ -6,7 +6,7 @@
 [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 This repository includes numerical simulation code for 1D heat equation, featuring both standard implementations and optimized versions using Numba. Additionally, it encompasses code for analyzing the statistical aspects of the total runtime, based on 100 trials for each experiment.
 
