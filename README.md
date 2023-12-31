@@ -8,7 +8,7 @@
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
-This repository includes numerical simulation code for 1D heat equation, featuring both standard implementations and optimized versions using Numba. Additionally, it encompasses code for analyzing the statistical aspects of the total runtime, based on 100 trials for each experiment.
+This repository includes numerical simulation code for 1D Heat Equation, featuring both standard implementations and optimized versions using Numba. Additionally, it encompasses code for analyzing the statistical aspects of the total runtime, based on 100 trials for each experiment.
 
 The following are the individuals involved in this project: [S. H. S. Herho](https://scholar.google.com/citations?user=uYQgjxMAAAAJ&hl=id), [S. N. Kaban](https://scholar.google.com/citations?user=Jc0NPJsAAAAJ&hl=en), [D. E. Irawan](https://scholar.google.com/citations?user=Myvc78MAAAAJ&hl=en), and [R. Kapid](https://scholar.google.co.id/citations?user=oArSkkYAAAAJ&hl=en).
 
