@@ -1,4 +1,4 @@
-# `1DHeatEqnNumba`: Optimized Numba-based Solver for 1D Heat Equation in Python
+# `1DHeatEqnNumba` Efficient 1D Heat Equation Solver: Leveraging Numba in Python
 
 [![DOI](https://zenodo.org/badge/736851334.svg)](https://zenodo.org/doi/10.5281/zenodo.10445246)
 [![GitHub watchers](https://img.shields.io/github/watchers/Naereen/StrapDown.js.svg?style=social&label=Watch&maxAge=2592000)](https://github.com/sandyherho/1DHeatEqnNumba/watchers)
@@ -22,7 +22,7 @@ If you find these data useful, please  consider citing our paper:
 ```
 @article{herhoEtAl24b_1dHeat,
          author={Herho, S. H. S. and Kaban, S. N. and Irawan, D. E. and Kapid, R.},
-         title={Optimized Numba-based Solver for 1D Heat Equation in Python},
+         title={Efficient 1D Heat Equation Solver: Leveraging Numba in Python},
          journal={xxxxx},
          year={2024},
          volume={x},
